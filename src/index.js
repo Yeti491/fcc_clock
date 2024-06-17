@@ -61,6 +61,7 @@ function MyApp() {
 
   useEffect(() => {
     if (isRunning) {
+      // eslint-disable-next-line
       interval = setInterval(() => {
         setTimeLeft((prevTimeLeft) => {
           if (prevTimeLeft <= 0 && isSession) {
